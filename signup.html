@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Siam Heritage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="main.html">
+            <img src="logo.png" width="80px" alt="back to home page">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">about us</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-content" style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100%; max-width: 400px; text-align: center;">
+            <h2 class="section-title">Sign Up</h2>
+            <form id="signupForm" onsubmit="return validateSignup(event)">
+                <input type="text" id="firstname" class="form-control" placeholder="First Name">
+                <input type="text" id="lastname" class="form-control" placeholder="Last Name">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+                <input type="password" id="password" class="form-control" placeholder="Password">
+                <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password">
+
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Sign Up</button>
+            </form>
+            <p style="margin-top: 1rem;">Already have an account? <a href="login.html"
+                    style="color: var(--primary-purple);">Login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p class="footer-text">made by 67162110078-5</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

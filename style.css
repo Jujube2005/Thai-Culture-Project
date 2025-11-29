@@ -1,0 +1,113 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&family=Prompt:wght@300;400;600&display=swap');
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(4, 47, 122);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(4, 47, 122);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main-layout {
+    flex: 1;
+    display: flex;
+}
+
+.text-container {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: left;
+}
+
+footer {
+    padding: 1rem 5%;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.page-content {
+    padding: 2rem 5%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.section-title {
+    color: rgb(4, 47, 122);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(4, 47, 122);
+}
+
+.btn-primary {
+    background-color: rgb(4, 47, 122);
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    body {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        height: auto;
+    }
+}
+
+.no-decoration {
+    text-decoration: none;
+}
